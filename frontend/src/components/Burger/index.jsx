@@ -16,7 +16,7 @@ export default function Burger({ ...props }) {
             <Link to="/Projets">Projets</Link>
           </li>
           <li>
-            <Link to="/Projets">Projets</Link>
+            <Link to="/ressources">Ressources</Link>
           </li>
         </ul>
       </div>

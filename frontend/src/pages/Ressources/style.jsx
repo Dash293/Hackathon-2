@@ -42,4 +42,16 @@ export default styled.div`
   img {
     width: 60%;
   }
+  @media screen and (max-width: 700px) {
+    padding-left: 0;
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    .card {
+      width: 40%;
+      margin: auto;
+      margin-bottom: 5vh;
+    }
+  }
 `;
