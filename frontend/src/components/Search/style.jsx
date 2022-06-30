@@ -5,10 +5,8 @@ export default styled.div`
   max-width: 72vw;
   height: 90vh;
   margin-left: 28vw;
-  border: 2px dotted green;
 
-  .test {
-    border: 3px solid red;
+  .container {
     padding: auto 2rem;
     display: flex;
     flex-direction: column;
@@ -23,6 +21,7 @@ export default styled.div`
     background-image: url(${avatar});
     background-size: cover;
     margin: center;
+    margin-bottom: 2rem;
   }
   .searchBar {
     padding: 2rem 1rem;
@@ -34,7 +33,25 @@ export default styled.div`
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       #dadfe3;
     border-radius: 10px;
-    .searchResult {
-    }
+  }
+  .searchGrey {
+    background-color: #384152;
+  }
+  .searchBlue {
+    background-color: #202a38;
+  }
+  .searchResults {
+    border-top-left-radius: 10px 10px;
+    border-top-right-radius: 10px 10px;
+  }
+  .searchResults div {
+    width: 40rem;
+  }
+  h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    border-top-left-radius: 10px 10px;
+    border-top-right-radius: 10px 10px;
   }
 `;
