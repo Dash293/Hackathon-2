@@ -3,6 +3,7 @@ import projects from "@assets/icon-projects.png";
 import salaries from "@assets/icon-salaries.png";
 import ressources from "@assets/icon-ressources.png";
 import idea from "@assets/icon-idea.png";
+import { Link } from "react-router-dom";
 import SNavbar from "./style";
 
 export default function Navbar() {
@@ -20,22 +21,30 @@ export default function Navbar() {
         </div>
         <div className="buttonnav">
           <ul>
-            <li>
-              <img className="button" src={projects} alt="projets" />
-              Projets
-            </li>
-            <li>
-              <img className="button" src={salaries} alt="salaries" />
-              Ressources & outils
-            </li>
-            <li>
-              <img className="button" src={ressources} alt="resources" />
-              Ressources & outils
-            </li>
-            <li>
-              <img className="button" src={idea} alt="idea" />
-              Boite à idées
-            </li>
+            <Link to="/projets" style={{ textDecoration: "none" }}>
+              <li>
+                <img className="button" src={projects} alt="projets" />
+                Projets
+              </li>
+            </Link>
+            <Link to="/" style={{ textDecoration: "none" }}>
+              <li>
+                <img className="button" src={salaries} alt="salaries" />
+                Ressources & outils
+              </li>
+            </Link>
+            <Link to="/projets" style={{ textDecoration: "none" }}>
+              <li>
+                <img className="button" src={ressources} alt="resources" />
+                Ressources & outils
+              </li>
+            </Link>
+            <Link to="/projets" style={{ textDecoration: "none" }}>
+              <li>
+                <img className="button" src={idea} alt="idea" />
+                Boite à idées
+              </li>
+            </Link>
           </ul>
         </div>
       </div>
