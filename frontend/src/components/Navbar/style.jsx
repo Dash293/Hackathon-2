@@ -7,34 +7,55 @@ export default styled.div`
   background: var(--colorBlueNavBar);
 
   .profil {
-    position: absolute;
-    width: 20.8vw;
+    display: flex;
+    margin: 2rem;
+    justify-content: space-around;
+    width: 22.8vw;
     height: 15.3vh;
-    left: 2.813rem;
-    top: 4.625rem;
     background: #384152;
     border-radius: 25px;
   }
-  img {
-    position: absolute;
+  .imgprofil {
+    width: 4.1vw;
+    margin: auto;
+  }
+  .photoprofil {
     width: 4.1vw;
     height: 7.6vh;
-    left: 0.9rem;
-    top: 1.563rem;
   }
-  li {
-    list-style: none;
-    position: absolute;
-    width: 12.6vw;
-    height: 4.05vh;
-    left: 5.625rem;
-    top: 1.875rem;
+  .detailprofil {
+    width: 15vw;
+    margin: auto;
+  }
+  h1 {
+    font-family: var(--font-familyTitle);
+    font-weight: 700;
+    font-size: 26px;
+    color: var(--colorTextWhite);
   }
   p {
-    position: absolute;
-    width: 12.6vw;
-    height: 4.5vh;
-    left: 5.625rem;
-    top: 4.375rem;
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 17px;
+    color: var(--colorTextWhite);
+  }
+
+  ul {
+    width: 27vw;
+  }
+
+  .button {
+    width: 35px;
+    height: 35px;
+    margin-right: 3vw;
+    margin-left: 2vw;
+    margin-top: 2vh;
+  }
+  li {
+    height: 10vh;
+    color: var(--colorTextWhite);
+    &:hover {
+      background-color: var(--colorLightBlue);
+    }
   }
 `;

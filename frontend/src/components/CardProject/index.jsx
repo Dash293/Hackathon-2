@@ -1,12 +1,9 @@
-import SCardProject from "@components/CardProject/style"
+import SCardProject from "@components/CardProject/style";
 
 export default function CardProject() {
-
-
   return (
     <SCardProject>
-<div>cardproject</div>
-
+      <div>cardproject</div>
     </SCardProject>
   );
 }
