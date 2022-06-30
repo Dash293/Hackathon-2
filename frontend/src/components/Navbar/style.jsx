@@ -58,4 +58,7 @@ export default styled.div`
       background-color: var(--colorLightBlue);
     }
   }
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
 `;
