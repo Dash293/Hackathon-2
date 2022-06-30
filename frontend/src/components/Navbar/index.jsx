@@ -30,10 +30,10 @@ export default function Navbar() {
             <Link to="/" style={{ textDecoration: "none" }}>
               <li>
                 <img className="button" src={salaries} alt="salaries" />
-                Ressources & outils
+                Collaborateurs
               </li>
             </Link>
-            <Link to="/" style={{ textDecoration: "none" }}>
+            <Link to="/ressources" style={{ textDecoration: "none" }}>
               <li>
                 <img className="button" src={ressources} alt="resources" />
                 Ressources & outils
