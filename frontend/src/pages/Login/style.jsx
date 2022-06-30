@@ -51,4 +51,11 @@ export default styled.div`
     border-radius: 1.6rem;
     background: var(--colorBackgroundOrangeCard);
   }
+
+  @media screen and (max-width: 500px) {
+    h1 {
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+  }
 `;

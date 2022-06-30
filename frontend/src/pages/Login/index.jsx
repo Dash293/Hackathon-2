@@ -1,4 +1,5 @@
 import logo from "@assets/logo-blanc.png";
+import LoginButton from "@components/LoginButton";
 import Style from "./style";
 
 export default function Login() {
@@ -12,8 +13,8 @@ export default function Login() {
         <div className="login-box">
           <input type="text" name="email" placeholder="Email" />
           <input type="password" name="password" placeholder="Password" />
-          <input className="button" type="submit" value="connexion" />
         </div>
+        <LoginButton />
       </section>
     </Style>
   );
