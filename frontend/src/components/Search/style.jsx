@@ -4,7 +4,7 @@ import avatar from "@assets/profil.png";
 export default styled.div`
   max-width: 72vw;
   height: 90vh;
-  margin-left: 28vw;
+  padding-left: 28vw;
 
   .container {
     padding: auto 2rem;
@@ -45,7 +45,7 @@ export default styled.div`
     border-top-right-radius: 10px 10px;
   }
   .searchResults div {
-    width: 40rem;
+    width: 45vw;
   }
   h2 {
     text-align: center;
@@ -53,5 +53,11 @@ export default styled.div`
     color: white;
     border-top-left-radius: 10px 10px;
     border-top-right-radius: 10px 10px;
+  }
+  @media screen and (max-width: 700px) {
+    .searchResults div {
+      width: 80vw;
+      margin: auto;
+    }
   }
 `;
