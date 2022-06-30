@@ -1,6 +1,7 @@
 import CardProject from "@components/CardProject";
 import Navbar from "@components/Navbar";
 import Title from "@components/Title";
+import Header from "@components/Header";
 import SProjects from "@pages/Projects/style";
 
 export default function Projects() {
@@ -89,6 +90,7 @@ export default function Projects() {
   return (
     <>
       <Navbar />
+      <Header />
       <Title title="Projets en cours" />
       <SProjects>
         {projects.map((project) => {

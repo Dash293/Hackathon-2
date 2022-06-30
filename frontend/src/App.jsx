@@ -1,6 +1,7 @@
 import Search from "@components/Search";
-import Login from "@pages/Home";
+import Login from "@pages/Login";
 import Projects from "@pages/Projects";
+import Ressources from "@pages/Ressources";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/projets" element={<Projects />} />
+        <Route path="/ressources" element={<Ressources />} />
         <Route path="/search" element={<Search />} />
       </Routes>
     </div>
