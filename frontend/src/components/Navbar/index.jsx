@@ -1,4 +1,9 @@
 import Profil from "@assets/profil.png";
+import projects from "@assets/icon-projects.png";
+import salaries from "@assets/icon-salaries.png";
+import ressources from "@assets/icon-ressources.png";
+import idea from "@assets/icon-idea.png";
+import { Link } from "react-router-dom";
 import SNavbar from "./style";
 
 export default function Navbar() {
@@ -6,9 +11,41 @@ export default function Navbar() {
     <SNavbar>
       <div className="container">
         <div className="profil">
-          <img src={Profil} alt="profil" />
-          <li>Prénom Nom</li>
-          <p>prenom.nom@gmail.com</p>
+          <div className="imgprofil">
+            <img className="photoprofil" src={Profil} alt="profil" />
+          </div>
+          <div className="detailprofil">
+            <h1>Prénom Nom</h1>
+            <p>prenom.nom@gmail.com</p>
+          </div>
+        </div>
+        <div className="buttonnav">
+          <ul>
+            <Link to="/projets" style={{ textDecoration: "none" }}>
+              <li>
+                <img className="button" src={projects} alt="projets" />
+                Projets
+              </li>
+            </Link>
+            <Link to="/" style={{ textDecoration: "none" }}>
+              <li>
+                <img className="button" src={salaries} alt="salaries" />
+                Ressources & outils
+              </li>
+            </Link>
+            <Link to="/" style={{ textDecoration: "none" }}>
+              <li>
+                <img className="button" src={ressources} alt="resources" />
+                Ressources & outils
+              </li>
+            </Link>
+            <Link to="/" style={{ textDecoration: "none" }}>
+              <li>
+                <img className="button" src={idea} alt="idea" />
+                Boite à idées
+              </li>
+            </Link>
+          </ul>
         </div>
       </div>
     </SNavbar>
