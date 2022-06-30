@@ -3,6 +3,12 @@ const AbstractManager = require("./AbstractManager");
 class EmployeeManager extends AbstractManager {
   static table = "employee";
 
+  find(id) {
+    return this.connection.query(`select * from  ${this.table} where id = ?`, [
+      id,
+    ]);
+  }
+
   insert(employee) {
     return this.connection.query(
       `insert into ${EmployeeManager.table} (title) values (?)`,
