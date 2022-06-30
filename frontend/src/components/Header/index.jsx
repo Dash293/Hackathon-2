@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Logo from "@assets/logo-apside.png";
+import Logo from "@assets/logo-blanc.png";
 import Burger from "@components/Burger";
 import SHeader from "./style";
 
@@ -17,8 +17,6 @@ export default function Header() {
           <img src={Logo} alt="logo" />
         </div>
       </Link>
-      {/* <Burger /> */}
-
       <Burger burger={burgerOpen} func={toggleBurger} />
     </SHeader>
   );

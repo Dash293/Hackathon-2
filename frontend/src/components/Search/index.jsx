@@ -1,8 +1,9 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import Navbar from "@components/Navbar";
 import Title from "@components/Title";
-import { Link } from "react-router-dom";
+import Header from "@components/Header";
 import SSearch from "./style";
 
 function Search() {
@@ -23,6 +24,7 @@ function Search() {
   return (
     <>
       <Navbar />
+      <Header />
       <Title title="Salarié du groupe" />
       <SSearch>
         <div className="container">
