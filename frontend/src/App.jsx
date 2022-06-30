@@ -1,13 +1,14 @@
 import Navbar from "@components/Navbar";
-import Styled from "./AppStyle";
+import Login from "@pages/Home";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <Styled>
-        <Navbar />
-        <main />
-      </Styled>
+      <Routes>
+        <Route path="/" element={<Login />} />
+      </Routes>
+      <Navbar />
     </div>
   );
 }
