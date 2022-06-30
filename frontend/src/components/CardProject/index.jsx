@@ -26,3 +26,4 @@ CardProject.propTypes = {
   agence: PropTypes.string.isRequired,
   logo: PropTypes.string.isRequired,
 };
+
