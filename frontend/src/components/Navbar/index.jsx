@@ -33,13 +33,13 @@ export default function Navbar() {
                 Ressources & outils
               </li>
             </Link>
-            <Link to="/projets" style={{ textDecoration: "none" }}>
+            <Link to="/" style={{ textDecoration: "none" }}>
               <li>
                 <img className="button" src={ressources} alt="resources" />
                 Ressources & outils
               </li>
             </Link>
-            <Link to="/projets" style={{ textDecoration: "none" }}>
+            <Link to="/" style={{ textDecoration: "none" }}>
               <li>
                 <img className="button" src={idea} alt="idea" />
                 Boite à idées
