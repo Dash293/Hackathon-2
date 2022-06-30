@@ -15,7 +15,7 @@ router.put("/items/:id", ItemController.edit);
 router.post("/items", ItemController.add);
 router.delete("/items/:id", ItemController.delete);
 router.get("/collaborateurs", EmployeeController.browse);
-router.get("/projets", IdeaController.browse);
-router.get("/idées", ProjectController.browse);
+router.get("/projets", ProjectController.browse);
+router.get("/idées", IdeaController.browse);
 
 module.exports = router;
