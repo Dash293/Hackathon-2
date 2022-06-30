@@ -56,6 +56,16 @@ function Search() {
                     .toString()
                     .toLowerCase()
                     .toLowerCase()
+                    .includes(searchTerm.toString().toLowerCase()) ||
+                  val.skills
+                    .toString()
+                    .toLowerCase()
+                    .toLowerCase()
+                    .includes(searchTerm.toString().toLowerCase()) ||
+                  val.agency
+                    .toString()
+                    .toLowerCase()
+                    .toLowerCase()
                     .includes(searchTerm.toString().toLowerCase())
                 );
               })

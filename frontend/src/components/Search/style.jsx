@@ -5,6 +5,9 @@ export default styled.div`
   max-width: 72vw;
   height: 90vh;
   padding-left: 28vw;
+  a:link {
+    text-decoration: none !important;
+  }
 
   .container {
     padding: auto 2rem;
@@ -22,6 +25,9 @@ export default styled.div`
     background-size: cover;
     margin: center;
     margin-bottom: 2rem;
+  }
+  input {
+    text-align: center;
   }
   .searchBar {
     padding: 2rem 1rem;
@@ -48,16 +54,41 @@ export default styled.div`
     width: 45vw;
   }
   h2 {
+    text-decoration: none;
     text-align: center;
     font-size: 1.5rem;
+    line-height: 2rem;
     color: white;
     border-top-left-radius: 10px 10px;
     border-top-right-radius: 10px 10px;
   }
   @media screen and (max-width: 700px) {
+    padding-left: initial;
+    margin: initial;
+    width: 100vw;
+    .avatar {
+      display: none;
+    }
+
+    p {
+      text-align: center;
+      padding: 0 2rem;
+    }
+
     .searchResults div {
       width: 80vw;
-      margin: auto;
+      padding: initial;
+    }
+    .container {
+      width: 100vw;
+    }
+
+    .searchBar input {
+      height: 2rem;
+      width: 80vw;
+      font-size: 1, 2rem;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        #dadfe3;
     }
   }
 `;
