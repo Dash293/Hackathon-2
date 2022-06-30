@@ -1,10 +1,12 @@
+import Navbar from "@components/Navbar";
 import Styled from "./AppStyle";
 
 function App() {
   return (
     <div className="App">
       <Styled>
-        <p>coucou</p>
+        <Navbar />
+        <main />
       </Styled>
     </div>
   );
