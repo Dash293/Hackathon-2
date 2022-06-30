@@ -1,16 +1,14 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import Navbar from "@components/Navbar";
 import Title from "@components/Title";
-import { Link, useParams } from "react-router-dom";
 import Header from "@components/Header";
 import SSearch from "./style";
 
 function Search() {
   const [employees, setEmployees] = useState([]);
   const [searchTerm, setSearchTerm] = useState([]);
-
-  const { id } = useParams();
 
   useEffect(() => {
     axios
@@ -67,7 +65,7 @@ function Search() {
                     className={index % 2 === 0 ? "searchGrey" : "searchBlue"}
                     key="val.name"
                   >
-                    <Link to={`/collaborateurs/${id}`}>
+                    <Link to={`/collaborateurs/${val.id}`}>
                       <h2>
                         {val.firstname} {val.lastname}
                       </h2>
