@@ -14,6 +14,10 @@ function CollaborateurCard() {
   }, []);
   return (
     <SCollaborateurCard src={collaborateurData} className="container">
+      <img
+        src={`../../src/assets/profilePictures/${collaborateurData.profilePicture}`}
+        alt="profile"
+      />
       <h1>
         {collaborateurData.firstname} {collaborateurData.lastname}
       </h1>
