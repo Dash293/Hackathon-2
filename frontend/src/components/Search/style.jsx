@@ -5,6 +5,9 @@ export default styled.div`
   max-width: 72vw;
   height: 90vh;
   padding-left: 28vw;
+  a:link {
+    text-decoration: none !important;
+  }
 
   .container {
     padding: auto 2rem;
@@ -51,8 +54,10 @@ export default styled.div`
     width: 45vw;
   }
   h2 {
+    text-decoration: none;
     text-align: center;
     font-size: 1.5rem;
+    line-height: 2rem;
     color: white;
     border-top-left-radius: 10px 10px;
     border-top-right-radius: 10px 10px;
@@ -61,6 +66,9 @@ export default styled.div`
     padding-left: initial;
     margin: initial;
     width: 100vw;
+    .avatar {
+      display: none;
+    }
 
     p {
       text-align: center;
