@@ -1,13 +1,19 @@
-import Home from "@pages/Home";
-import Styled from "./AppStyle";
+import Search from "@components/Search";
+import Login from "@pages/Login";
+import Projects from "@pages/Projects";
+import Ressources from "@pages/Ressources";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <Styled>
-        <Home />
-        <p>coucou</p>
-      </Styled>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/projets" element={<Projects />} />
+        <Route path="/ressources" element={<Ressources />} />
+        <Route path="/collaborateurs" element={<Search />} />
+        <Route path="/collaborateurs/:id" element={<Search />} />
+      </Routes>
     </div>
   );
 }
