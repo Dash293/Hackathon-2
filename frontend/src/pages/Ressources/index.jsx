@@ -7,11 +7,13 @@ import LogoFigma from "@assets/logo-figma.png";
 import LogoTrello from "@assets/trello.png";
 import LogoUdemy from "@assets/udemy.png";
 import LogoGitHub from "@assets/GitHub-Logo.png";
+import Header from "@components/Header";
 
 export default function Ressources() {
   return (
     <>
       <Navbar />
+      <Header />
       <Title title="Ressources & outils" />
       <SRessources>
         <div className="page">
