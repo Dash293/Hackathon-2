@@ -27,7 +27,7 @@ export default function Navbar() {
                 Projets
               </li>
             </Link>
-            <Link to="/" style={{ textDecoration: "none" }}>
+            <Link to="/collaborateurs" style={{ textDecoration: "none" }}>
               <li>
                 <img className="button" src={salaries} alt="salaries" />
                 Collaborateurs
