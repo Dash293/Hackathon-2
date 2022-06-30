@@ -8,14 +8,11 @@ function Search() {
   const [employees, setEmployees] = useState([]);
   const [searchTerm, setSearchTerm] = useState([]);
 
-  const arr = [{ name: "banane" }, { name: "pomme" }, { name: "citron" }];
-
   useEffect(() => {
     axios
-      .get("https://jsonplaceholder.typicode.com")
+      .get(`${import.meta.env.VITE_BACKEND_URL}/collaborateurs`)
       .then(({ data }) => setEmployees(data));
   }, []);
-  console.warn(employees);
 
   const handleSearchTerm = (e) => {
     const { value } = e.target;
@@ -25,7 +22,7 @@ function Search() {
   return (
     <>
       <Navbar />
-      <Title />
+      <Title title="Salarié du groupe" />
       <SSearch>
         <div className="container">
           <div className="avatar" />
@@ -36,13 +33,28 @@ function Search() {
               name="searchBar"
               id="searchBar"
               placeholder="Recherche"
-              onClick={handleSearchTerm}
+              onChange={handleSearchTerm}
             />
           </div>
           <div className="searchResults">
-            {arr
+            {employees
               .filter((val) => {
-                return val.name.includes(searchTerm);
+                return (
+                  val.firstname
+                    .toString()
+                    .toLowerCase()
+                    .includes(searchTerm.toString().toLowerCase()) ||
+                  val.lastname
+                    .toString()
+                    .toLowerCase()
+                    .toLowerCase()
+                    .includes(searchTerm.toString().toLowerCase()) ||
+                  val.role
+                    .toString()
+                    .toLowerCase()
+                    .toLowerCase()
+                    .includes(searchTerm.toString().toLowerCase())
+                );
               })
               .map((val, index) => {
                 return (
@@ -50,7 +62,9 @@ function Search() {
                     className={index % 2 === 0 ? "searchGrey" : "searchBlue"}
                     key="val.name"
                   >
-                    <h2>{val.name}</h2>
+                    <h2>
+                      {val.firstname} {val.lastname}
+                    </h2>
                   </div>
                 );
               })}
