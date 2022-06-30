@@ -1,5 +1,5 @@
-import Navbar from "@components/Navbar";
 import Login from "@pages/Home";
+import Projects from "@pages/Projects";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -7,8 +7,8 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Login />} />
+        <Route path="/projets" element={<Projects />} />
       </Routes>
-      <Navbar />
     </div>
   );
 }
