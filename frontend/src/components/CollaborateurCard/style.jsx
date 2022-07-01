@@ -10,7 +10,7 @@ export default styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-left: 36vw;
+  margin-left: 36.5vw;
 
   h1 {
     margin-bottom: 2rem;
