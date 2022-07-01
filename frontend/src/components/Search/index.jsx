@@ -25,11 +25,11 @@ function Search() {
     <>
       <Navbar />
       <Header />
-      <Title title="Salarié du groupe" />
+      <Title title="Salariés du groupe" />
       <SSearch>
         <div className="container">
           <div className="avatar" />
-          <p>Recherche un Apsider par nom, par compétence, par agence...</p>
+          <p>Recherche un Apsider par nom, par compétences, par agence...</p>
           <div className="searchBar">
             <input
               type="text"
