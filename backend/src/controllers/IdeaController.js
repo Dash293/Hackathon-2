@@ -56,7 +56,7 @@ class IdeaController {
 
     // TODO validations (length, format...)
 
-    models.ideaBox
+    models.idea
       .insert(idea)
       .then(([result]) => {
         res.status(201).send({ ...idea, id: result.insertId });
