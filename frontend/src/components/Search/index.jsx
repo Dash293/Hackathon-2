@@ -75,7 +75,7 @@ function Search() {
                     className={index % 2 === 0 ? "searchGrey" : "searchBlue"}
                     key="val.name"
                   >
-                    <Link to={`/collaborateurs/${val.id}`}>
+                    <Link to={`/collaborateurs/${val.id}`} target="_blank">
                       <h2>
                         {val.firstname} {val.lastname}
                       </h2>

@@ -31,32 +31,40 @@ export default function Ressources() {
           </p>
           <div className="cards-container">
             <div className="card">
-              <a href="https://slack.com/intl/fr-fr/">
+              <a
+                href="https://slack.com/intl/fr-fr/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={LogoSlack} alt="Slack" />
               </a>
             </div>
             <div className="card">
-              <a href="https://www.google.com/intl/fr/drive/">
+              <a
+                href="https://www.google.com/intl/fr/drive/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={LogoGoogleDrive} alt="Google Drive" />
               </a>
             </div>
             <div className="card">
-              <a href="https://www.figma.com/">
+              <a href="https://www.figma.com/" target="_blank" rel="noreferrer">
                 <img src={LogoFigma} alt="Figma" />
               </a>
             </div>
             <div className="card">
-              <a href="https://trello.com/">
+              <a href="https://trello.com/" target="_blank" rel="noreferrer">
                 <img src={LogoTrello} alt="Trello" />
               </a>
             </div>
             <div className="card">
-              <a href="https://www.udemy.com/">
+              <a href="https://www.udemy.com/" target="_blank" rel="noreferrer">
                 <img src={LogoUdemy} alt="Udemy" />
               </a>
             </div>
             <div className="card">
-              <a href="https://github.com/">
+              <a href="https://github.com/" target="_blank" rel="noreferrer">
                 <img src={LogoGitHub} alt="Github" />
               </a>
             </div>
