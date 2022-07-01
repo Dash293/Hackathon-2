@@ -8,6 +8,12 @@ export default styled.div`
 
   -webkit-box-shadow: 10px 14px 19px -3px rgba(17, 12, 44, 0.44);
   box-shadow: 10px 14px 19px -3px rgba(17, 12, 44, 0.44);
+  :hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+    transition: transform 0.5s ease;
+  }
   img {
     padding-left: 10px;
     height: 8vh;
