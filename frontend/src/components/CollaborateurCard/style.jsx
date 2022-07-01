@@ -11,6 +11,7 @@ export default styled.div`
   justify-content: center;
   flex-direction: column;
   margin-left: 36.5vw;
+  font-family: var(--font-familyBody);
 
   h1 {
     margin-bottom: 2rem;
@@ -18,12 +19,13 @@ export default styled.div`
 
   h2 {
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-top: 1.5rem;
   }
 
   img {
     height: 30vh;
     width: auto;
+    margin-bottom: 5vh;
   }
 `;
