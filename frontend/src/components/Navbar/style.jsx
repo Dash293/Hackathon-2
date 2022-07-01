@@ -20,9 +20,8 @@ export default styled.div`
     margin: auto;
   }
   .photoprofil {
-    /* width: 4.1vw;
-    height: 7.6vh;
-    aspect-ratio: 1/1; */
+    width: 4.1vw;
+    aspect-ratio: 1/1;
   }
   .detailprofil {
     width: 15vw;
@@ -47,7 +46,6 @@ export default styled.div`
     flex-direction: column;
     justify-content: center;
   }
-
   .button {
     width: 35px;
     height: 35px;
