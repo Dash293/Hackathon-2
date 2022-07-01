@@ -37,7 +37,7 @@ export default styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2rem;
+    flex-wrap: wrap;
   }
   form {
     display: flex;
