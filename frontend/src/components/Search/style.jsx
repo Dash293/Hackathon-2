@@ -47,6 +47,8 @@ export default styled.div`
     background-color: #202a38;
   }
   .searchResults {
+    margin-bottom: 5vh;
+
     border-top-left-radius: 10px 10px;
     border-top-right-radius: 10px 10px;
   }
@@ -54,9 +56,10 @@ export default styled.div`
     width: 45vw;
   }
   h2 {
+    font-family: var(--font-familyBody);
     text-decoration: none;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 2rem;
     color: white;
     border-top-left-radius: 10px 10px;
