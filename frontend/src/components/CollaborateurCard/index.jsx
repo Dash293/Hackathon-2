@@ -23,7 +23,7 @@ function CollaborateurCard() {
       </h1>
       <h2>Email : {collaborateurData.email}</h2>
       <h2>Métier : {collaborateurData.role}</h2>
-      <h2>Compétences : </h2>
+      <h2>Compétences : {collaborateurData.skills}</h2>
       <h2>Github : {collaborateurData.github}</h2>
       <h2>Slack : {collaborateurData.slack}</h2>
       <h2>Agence : {collaborateurData.agency}</h2>
