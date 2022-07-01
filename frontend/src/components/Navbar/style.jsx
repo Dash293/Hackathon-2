@@ -21,7 +21,7 @@ export default styled.div`
   }
   .photoprofil {
     width: 4.1vw;
-    height: 7.6vh;
+    aspect-ratio: 1/1;
   }
   .detailprofil {
     width: 15vw;
@@ -42,16 +42,21 @@ export default styled.div`
 
   ul {
     width: 27vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
-
   .button {
     width: 35px;
     height: 35px;
     margin-right: 3vw;
     margin-left: 2vw;
     margin-top: 2vh;
+    object-fit: contain;
   }
   li {
+    font-family: var(--font-familyBody);
+    font-size: 1.2em;
     height: 10vh;
     color: var(--colorTextWhite);
     &:hover {

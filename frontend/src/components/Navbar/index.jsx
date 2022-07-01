@@ -15,8 +15,8 @@ export default function Navbar() {
             <img className="photoprofil" src={Profil} alt="profil" />
           </div>
           <div className="detailprofil">
-            <h1>Prénom Nom</h1>
-            <p>prenom.nom@gmail.com</p>
+            <h1>Rémi Ménart</h1>
+            <p>remi.menart@gmail.com</p>
           </div>
         </div>
         <div className="buttonnav">
@@ -27,7 +27,7 @@ export default function Navbar() {
                 Projets
               </li>
             </Link>
-            <Link to="/" style={{ textDecoration: "none" }}>
+            <Link to="/collaborateurs" style={{ textDecoration: "none" }}>
               <li>
                 <img className="button" src={salaries} alt="salaries" />
                 Collaborateurs
