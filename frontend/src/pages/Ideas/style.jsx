@@ -38,7 +38,6 @@ export default styled.div`
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin: 2rem;
   }
   form {
     display: flex;
