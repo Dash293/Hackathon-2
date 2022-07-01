@@ -44,7 +44,7 @@ export default function Ideas() {
       <SIdeas>
         <div className="first-container">
           <img src={Light} alt="" />
-          <p>
+          <p className="text">
             Tu as une idée pour innover dans l’entreprise ? Un projet que tu
             souhaites réaliser avec Apside ?
           </p>
@@ -65,7 +65,7 @@ export default function Ideas() {
               name="description"
               onChange={hChange}
             />
-            <input type="submit" onClick={hSubmit} />
+            <input type="submit" className="submit" onClick={hSubmit} />
           </form>
         </div>
         <div className="ideas-container">
