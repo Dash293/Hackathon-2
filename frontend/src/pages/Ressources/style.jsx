@@ -38,6 +38,8 @@ export default styled.div`
     align-items: center;
     margin: 1rem;
     aspect-ratio: 1/1;
+    -webkit-box-shadow: 10px 14px 19px -3px rgba(17, 12, 44, 0.44);
+    box-shadow: 10px 14px 19px -3px rgba(17, 12, 44, 0.44);
   }
   img {
     width: 60%;

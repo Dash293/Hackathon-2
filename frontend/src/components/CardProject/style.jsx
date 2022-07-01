@@ -5,6 +5,9 @@ export default styled.div`
   border-radius: 15px;
   width: 18vw;
   margin-bottom: 5vh;
+
+  -webkit-box-shadow: 10px 14px 19px -3px rgba(17, 12, 44, 0.44);
+  box-shadow: 10px 14px 19px -3px rgba(17, 12, 44, 0.44);
   img {
     padding-left: 10px;
     height: 8vh;
