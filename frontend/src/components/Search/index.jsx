@@ -25,7 +25,7 @@ function Search() {
     <>
       <Navbar />
       <Header />
-      <Title title="Salariés du groupe" />
+      <Title title="Collaborateurs" />
       <SSearch>
         <div className="container">
           <div className="avatar" />
